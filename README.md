@@ -1,1 +1,0 @@
-# Banco-IT_Talent

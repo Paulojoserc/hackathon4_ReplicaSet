@@ -1,6 +1,0 @@
-# Dockerfile-consulta
-FROM mysql:latest
-
-COPY consulta.sql /consulta.sql
-
-ENTRYPOINT ["sh", "-c", "mysql -h banco-dados -u root -proot BANCO_DADOS_IT_TALENT < /consulta.sql"]
