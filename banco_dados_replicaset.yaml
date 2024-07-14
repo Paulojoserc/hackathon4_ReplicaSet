@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: ReplicaSet
 metadata:
-  name: banco-replicaset
+  name: database-replicaset
   labels:
-    app: banco
+    app: database
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: banco
+      app: database
   template:
     metadata:
       labels:
-        app: banco
+        app: database
     spec:
       containers:
-      - name: banco
-        image: gaellopes/banco-it-talent:v1
+      - name: database
+        image: moisesalc/banco-it_talent:latest
         ports:
-        - containerPort: 3306
+        - containerPort: 5432 

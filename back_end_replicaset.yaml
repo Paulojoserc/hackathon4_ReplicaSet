@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: backend
-        image: gaellopes/backend:v1
+        image: moisesalc/backend-it_talent:latest
         ports:
         - containerPort: 8080
